@@ -3,6 +3,14 @@ import os
 import re
 import simplekml
 
+'''
+AUTHOR:Patrick Daniel
+Get the the coordinates from all of the picture taken with the lab camera, an olympus TG-4.
+This was used as a quick way to 'geo' tag squid during evening fishing trip out of Santa Rosalia, Baja Sur
+Create KML files to be read into goole earth
+Leans heavily on the exifread package ( https://pypi.python.org/pypi/ExifRead)
+'''
+
 def getFileNames():
 	fileNameList = []
 	prog = re.compile(r".jpg")
